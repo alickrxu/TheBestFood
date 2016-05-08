@@ -24,6 +24,14 @@ results = []
 for b in response.businesses:
     # find business of all search results
     info = client.get_business(b.id)
-    print info.business.name
-    results.append([info.business.url, info.business.reviews])
+    results.append({
+        'name' : info.business.name, 
+        'id' : info.business.id,
+        'rating' : info.business.rating,
+        'count' : info.business.review_count,
+        'location' : info.business.location
+        })
 
+with open('businesses.txt', 'w') as myfile:
+    for result in results:
+        myfile.write(result['name'] + ', ' + str(result['rating']) + ', ' + str(result['count']) +', ' + result['id'] + '\n')
