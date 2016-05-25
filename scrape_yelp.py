@@ -1,4 +1,5 @@
 import scrapy
+import pickle
 
 class ScrapeYelpSpider(scrapy.Spider):
     name = 'yelp'
@@ -13,18 +14,19 @@ class ScrapeYelpSpider(scrapy.Spider):
         filename = 'data/' + response.url.split('/')[-1].split('?')[0] + '.txt'
         price_range = response.xpath('//span[@class="business-attribute price-range"]/text()').extract()
         business_info = response.xpath('//div[@class="short-def-list"]/dl/*[self::dt or self::dd]/text()').extract()
+        oldest_review = response.xpath("//ul[@class='ylist ylist-bordered reviews']/li[2]/div[@class='review review--with-sidebar']/div[@class='review-wrapper']/div[@class='review-content']/div[@class='biz-rating biz-rating-very-large clearfix']/span[@class='rating-qualifier']").extract()
+
+        print oldest_review
 
         business_info = [x.strip(' \n') for x in business_info]
+
+        #TODO pickle
+        #data = {'price_range': price_range, 'business_info' : business_info, 'oldest_review' : oldest_review}
+
         with open(filename, 'wb') as myfile:
             myfile.write(price_range[0])
-            myfile.write('|')
+            myfile.write('\n')
             it = iter(business_info)
             for prop, info in zip(it, it):
-                myfile.write(prop + ": " + info + ", ")
-'''
-        yield {
-            'price_range': price_range,
-            'business_info' : business_info
-
-        }
-        '''
+                myfile.write(prop + ": " + info + "\n")
+            myfile.write(oldest_review[0])
