@@ -1,0 +1,169 @@
+Bike Parking | No, Yes
+Good for Kids|  No, Yes
+Accepts Apple Pay|  No, Yes 
+Alcohol|  No, Beer & Wine Only,  Full Bar
+Has TV | No, Yes
+Noise Level | No, Quiet,    Average,    Loud,    Very Loud
+Delivery | No, Yes  
+Attire | No, Casual ,   Dressy ,   Formal (Jacket Required)
+Ambience | No, Divey ,   Hipster ,   Casual ,   Touristy ,   Trendy ,   Intimate ,   Romantic , Classy ,   Upscale
+Good for Groups | No, Yes 
+Good for Dancing | No, Yes
+Caters | No, Yes  
+Wi-Fi | No, Free ,   Paid 
+Waiter Service | No, Yes   
+Outdoor Seating|  No, Yes
+Price Range Per Person |No,   $,   $$,   $$$ ,   $$$$ 
+Good For | No, Breakfast,  Brunch,    Lunch ,   Dinner ,   Late Night ,   Dessert
+Take-out | No, Yes 
+Accepts Credit Cards | No, Yes
+Accepts Bitcoin | No, Yes
+Accepts Insurance | No, Yes
+Coat Check | No, Yes
+Dogs Allowed | No, Yes
+Happy Hour | No, Yes
+Parking | No, Street, Private Lot, Valet
+Smoking Allowed | No, yes, outdoor
+Take-out | No, Yes
+Takes Reservations | No, Yes
+Wheelchair Accessible | No, Yes 
+Opened 24hrs | No, Yes
+Has Pool Table | No, Yes
+Music | Background
+Smoking | No, Yes
+Best Nights | No
+Drive-Thru | No, Yes
+afghani | No, Yes
+african | No, Yes
+senegalese | No, Yes
+southafrican| No, Yes
+newamerican| No, Yes
+tradamerican| No, Yes
+arabian| No, Yes
+argentine| No, Yes
+armenian| No, Yes
+asianfusion| No, Yes
+austrian| No, Yes
+bbq| No, Yes
+basque| No, Yes
+belgian| No, Yes
+brasseries| No, Yes
+brazilian| No, Yes
+breakfast & brunch | No, Yes
+British | No, Yes
+Buffets| No, Yes
+Burgers| No, Yes
+Burmese| No, Yes
+Cafes| No, Yes
+Cafeteria| No, Yes 
+Cajun/Creole| No, Yes
+Cambodian| No, Yes
+Caribbean| No, Yes
+Dominican| No, Yes
+Haitian| No, Yes
+Puerto Rican | No, Yes
+Trinidadian| No, Yes
+Catalan| No, Yes
+Cheesesteaks| No, Yes
+Chicken Shop| No, Yes
+Chicken Wings| No, Yes
+Chinese| No, Yes
+Cantonese| No, Yes
+Dim Sum| No, Yes
+Hainan| No, Yes 
+Shanghainese| No, Yes 
+Szechuan| No, Yes
+Comfort Food | No, Yes
+Creperies | No, Yes
+Cuban | No, Yes
+Czech | No, Yes
+Delis | No, Yes 
+Diners | No, Yes
+Dinner Theater | No, Yes 
+Ethiopian | No, Yes 
+Fast Food | No, Yes 
+Filipino | No, Yes 
+Fish & Chips | No, Yes 
+Fondue | No, Yes 
+Food Court | No, Yes 
+Food Stands | No, Yes 
+French | No, Yes 
+Gastropubs | No, Yes 
+Georgian | No, Yes 
+German | No, Yes 
+Gluten-Free | No, Yes 
+Greek | No, Yes 
+Halal| No, Yes 
+Hawaiian | No, Yes 
+Himalayan/Nepalese | No, Yes 
+Hot Dogs | No, Yes 
+Hot Pot | No, Yes 
+Hungarian | No, Yes 
+Iberian | No, Yes 
+Indian | No, Yes 
+Indonesian | No, Yes 
+International | No, Yes 
+Irish | No, Yes 
+Italian | No, Yes 
+Calabrian | No, Yes 
+Sardinian | No, Yes 
+Tuscan | No, Yes 
+Venetian | No, Yes 
+Japanese | No, Yes 
+Ramen | No, Yes 
+Teppanyaki | No, Yes 
+Korean | No, Yes 
+Kosher | No, Yes 
+Laotian | No, Yes 
+Latin American | No, Yes 
+Colombian | No, Yes 
+Salvadoran | No, Yes 
+Venezuelan | No, Yes 
+Live/Raw Food | No, Yes 
+Malaysian | No, Yes 
+Mediterranean | No, Yes 
+Falafel | No, Yes 
+Mexican | No, Yes 
+Middle Eastern | No, Yes 
+Egyptian | No, Yes 
+Lebanese | No, Yes 
+Modern European | No, Yes 
+Mongolian | No, Yes 
+Moroccan | No, Yes 
+Nicaraguan | No, Yes 
+Pakistani | No, Yes 
+Persian/Iranian | No, Yes 
+Peruvian | No, Yes 
+Pizza | No, Yes 
+Polish | No, Yes 
+Portuguese | No, Yes 
+Poutineries | No, Yes 
+Russian | No, Yes 
+Salad | No, Yes 
+Sandwiches | No, Yes 
+Scandinavian | No, Yes 
+Seafood | No, Yes 
+Singaporean | No, Yes 
+Slovakian | No, Yes 
+Soul Food | No, Yes 
+Soup | No, Yes 
+Southern | No, Yes 
+Spanish | No, Yes 
+Arroceria / Paella | No, Yes
+Sri Lankan | No, Yes
+Steakhouses | No, Yes
+Supper Clubs | No, Yes
+Sushi Bars | No, Yes
+Syrian | No, Yes
+Taiwanese| No, Yes
+Tapas Bars| No, Yes 
+Tapas/Small Plates| No, Yes
+Tex-Mex | No, Yes
+Thai| No, Yes 
+Turkish| No, Yes 
+Ukrainian | No, Yes
+Uzbek| No, Yes 
+Vegan| No, Yes 
+Vegetarian | No, Yes 
+Vietnamese | No, Yes 
+Waffles | No, Yes 

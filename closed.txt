@@ -1,0 +1,32 @@
+Jimmy John's, jimmy-johns-isla-vista, 2014-03, 2016-04
+Lovin' Oven, lovin-oven-mediterranean-goleta-2, 2014-04, 2015-12
+Kogilicious, kogilicious-isla-vista, 2010-08, 2015-11
+Crushcakes and Cafe Isla Vista, crushcakes-and-cafe-isla-vista, 2012-09, 2015-08
+Pita Pit, pita-pit-isla-vista, ?, 2014-12
+Firehouse Subs, firehouse-subs-isla-vista, 2014-03, 2014-11
+Angry Wings, angry-wings-isla-vista-2, 2012-10, 2014-11
+Javan’s, javans-goleta, ?, 2013-10
+Cafe Int’l Isla Vista, cafe-intl-isla-vista, 2008-10, 2013-10
+Pasta House, pasta-house-goleta, 2009-07, 2013-04
+McMasters Steak and Hoagie, mcmasters-steak-and-hoagie-isla-vista, 2007-09, 2012-09
+Dogtown, dogtown-isla-vista, 2009-10, 2012-07
+Fat Mo’s Burgers & Car Wash, fat-mos-burgers-isla-vista, 2011-10, 2012-06
+Chino’s Rock & Tacos, chinos-rock-and-tacos-isla-vista, 2010-01, 2012-05
+Flaming Grill, flaming-grill-goleta, 2010-08, 2011-08
+Sweet Tooth, NO-YELP, 2010-10, 2011-06
+Little Asia, little-asia-isla-vista, ?, 2011-06
+Dirty’s, NO-YELP, 2010-11, 2010-11
+On the Side, on-the-side-isla-vista-2, 2010-03, 2010-09
+Korean BBQ House, NO-YELP, 2008-11, 2010-08
+Sushilicious, NO-YELP, 2009-08, 2010-08
+Java Jones, java-jones-goleta, ?, 2010-07
+Fresh Start, fresh-start-goleta, 2008-07, 2010-01
+CaliRoll Express, caliroll-express-isla-vista, ?, 2009-05
+Berrilicious, berrilicious-isla-vista-2, 2007-09, 2009-05
+Eclectic I.V, eclectic-iv-isla-vista, 2006-11, 2008-10
+Fresh Wok, fresh-wok-hesperia, 2006-08, 2008-09
+Isla Vista Bakery Cafe, isla-vista-bakery-cafe-goleta-2, ?, 2008-03
+Saigon Express, saigon-express-goleta, 2006-09, 2008-03
+Isla Vista Spot, NO-YELP, 2006-10, 2007-08
+New York Buffalo Wings, NO-YELP,  2007-05, 2007-08
+Jerusalem Garden Cafe, NO-YELP, 2006-09, 2007-05

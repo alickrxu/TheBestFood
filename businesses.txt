@@ -1,0 +1,37 @@
+805 Kabob, 4.5, 22, 805-kabob-goleta
+Cantina, 4.5, 125, cantina-isla-vista
+Buddha Bowls, 4.0, 85, buddha-bowls-isla-vista
+Freebirds World Burrito, 4.0, 907, freebirds-world-burrito-isla-vista
+Ike's Place Love and Sandwiches, 4.0, 34, ikes-place-love-and-sandwiches-goleta
+Bagel Cafe, 4.0, 191, bagel-cafe-goleta
+Aladdin Cafe, 4.0, 69, aladdin-cafe-isla-vista-5
+South Coast Deli, 4.0, 106, south-coast-deli-isla-vista
+Sorriso Italiano, 4.0, 94, sorriso-italiano-isla-vista
+Silvergreens, 3.5, 223, silvergreens-isla-vista
+Cafe Equilibrium, 4.0, 71, cafe-equilibrium-goleta-5
+Woodstock's Pizza, 4.0, 250, woodstocks-pizza-isla-vista-2
+IV Deli Mart, 3.5, 90, iv-deli-mart-goleta
+Blaze Fast-Fire'd Pizza, 4.0, 91, blaze-fast-fired-pizza-isla-vista
+Hana Kitchen, 3.0, 156, hana-kitchen-isla-vista
+The Habit, 4.0, 28, the-habit-isla-vista
+Sam's To Go - Isla Vista, 4.0, 67, sams-to-go-isla-vista-isla-vista
+Kaptain's Firehouse BBQ, 3.5, 42, kaptains-firehouse-bbq-isla-vista
+Blenders In the Grass, 4.5, 114, blenders-in-the-grass-isla-vista
+Pizza My Heart, 4.0, 69, pizza-my-heart-isla-vista
+Eat This, Shoot That! Santa Barbara Food & Wine Tours, 5.0, 20, eat-this-shoot-that-santa-barbara-food-and-wine-tours-santa-barbara
+Super Cuca's Taqueria 3, 3.5, 143, super-cucas-taqueria-3-isla-vista
+Giovanni's Isla Vista, 3.5, 84, giovannis-isla-vista-isla-vista
+Naan Stop, 3.0, 201, naan-stop-isla-vista
+Pho Bistro, 3.0, 123, pho-bistro-isla-vista
+Otaco, 3.5, 50, otaco-goleta
+El Sitio, 3.5, 29, el-sitio-isla-vista
+Le Café, 3.5, 9, le-café-isla-vista
+Wok On the Wild Side, 2.5, 73, wok-on-the-wild-side-goleta
+Domino's Pizza, 2.5, 34, dominos-pizza-goleta-3
+Super Cucas, 4.0, 6, super-cucas-isla-vista
+Santa Ynez Burrito, 3.5, 7, santa-ynez-burrito-goleta
+Dejavu, 2.5, 56, dejavu-goleta
+Portola Dining Commons, 4.0, 7, portola-dining-commons-goleta
+Rosarito, 2.5, 65, rosarito-isla-vista
+Subway, 2.5, 12, subway-goleta-6
+Toby's Ice Cream and Coffee, 4.0, 3, tobys-ice-cream-and-coffee-isla-vista

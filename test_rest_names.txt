@@ -1,0 +1,14 @@
+805-kabob-goleta.txt
+aladdin-cafe-isla-vista-5.txt
+blaze-fast-fired-pizza-isla-vista.txt
+buddha-bowls-isla-vista.txt
+el-sitio-isla-vista.txt
+ikes-place-love-and-sandwiches-goleta.txt
+otaco-goleta.txt
+portola-dining-commons-goleta.txt
+rosarito-isla-vista.txt
+santa-ynez-burrito-goleta.txt
+sorriso-italiano-isla-vista.txt
+subway-goleta-6.txt
+super-cucas-taqueria-3-isla-vista.txt
+wok-on-the-wild-side-goleta.txt

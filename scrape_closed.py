@@ -1,8 +1,8 @@
 import scrapy
 import time
 
-class ScrapeYelpSpider(scrapy.Spider):
-    name = 'yelp'
+class ScrapeClosedSpider(scrapy.Spider):
+    name = 'closed'
     start_urls = []
 
     skip_flag = True
@@ -12,20 +12,23 @@ class ScrapeYelpSpider(scrapy.Spider):
         if idx != -1:
             return string[idx+len(sub):idx+len(sub)+12]
 
-    with open('businesses.txt', 'r') as myfile:
-        for line in myfile.readlines():
+    with open('closed.txt', 'r') as f:
+        for line in f.readlines():
             items = line.split(',')
-            url = items[3].strip()
+            url = items[1].strip()
             start_urls.append('https://www.yelp.com/biz/' + url + '?sort_by=date_asc')
             start_urls.append('https://www.yelp.com/biz/' + url + '?sort_by=date_desc')
 
     def parse(self, response):
-        filename = 'data/test/' + response.url.split('/')[-1].split('?')[0] + '.txt'
+        filename = 'data/training/' + response.url.split('/')[-1].split('?')[0] + '.txt'
         if self.skip_flag:
             price_range = response.xpath('//span[@class="business-attribute price-range"]/text()').extract()
             business_info = response.xpath('//div[@class="short-def-list"]/dl/*[self::dt or self::dd]/text()').extract()
             cuisine_type = response.xpath("//div[@class='biz-page-header clearfix']/div[@class='biz-page-header-left']/div[@class='biz-main-info embossed-text-white']/div[@class='price-category']/span[@class='category-str-list']//text()").extract()
             oldest_review = response.xpath("//ul[@class='ylist ylist-bordered reviews']/li[2]/div[@class='review review--with-sidebar']/div[@class='review-wrapper']/div[@class='review-content']/div[@class='biz-rating biz-rating-very-large clearfix']/span[@class='rating-qualifier']").extract()
+
+            print 'price_range: ' + price_range[0]
+            print business_info
 
             #clean up cuisine_type 
             cuisines = [t.strip(' \n,') for t in cuisine_type if t.strip(' \n,')]
@@ -49,6 +52,7 @@ class ScrapeYelpSpider(scrapy.Spider):
                 myfile.write(rev + '\n')
             self.skip_flag = not self.skip_flag
             time.sleep(1)
+
         else:
             newest_review = response.xpath("//ul[@class='ylist ylist-bordered reviews']/li[2]/div[@class='review review--with-sidebar']/div[@class='review-wrapper']/div[@class='review-content']/div[@class='biz-rating biz-rating-very-large clearfix']/span[@class='rating-qualifier']").extract()
 
@@ -59,3 +63,4 @@ class ScrapeYelpSpider(scrapy.Spider):
 
             self.skip_flag = not self.skip_flag
             time.sleep(1)
+
