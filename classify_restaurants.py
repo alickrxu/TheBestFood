@@ -8,6 +8,7 @@ from sklearn.feature_selection import RFECV
 from sklearn.cross_validation import StratifiedKFold
 import pickle
 import matplotlib.pyplot as plt
+import numpy as np
 
 
 #load data
@@ -76,6 +77,8 @@ plt.show()
 new_X_test, new_y_test = load_svmlight_file('test_svm_data.txt')
 
 test_results = rfecv.predict(new_X_test)
+
+print test_results
 
 i = 0
 with open('test_rest_names.txt', 'r') as f:

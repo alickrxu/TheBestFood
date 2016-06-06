@@ -33,11 +33,13 @@ def make_feature_dicts():
     return features, dates, open_rest, closed_rest
 
 #path_to_filename is full path to file
-def convert_to_svm(path_to_filename):
+#creates a single svm line for the filename given 
+def convert_to_svm(path_to_filename, make_training_data):
     unlabelled_features, dates, open_rest, closed_rest = make_feature_dicts()
 
     #make label dictionary
     features = collections.OrderedDict(sorted(unlabelled_features.items()))
+    features['smoking']['outdoorarea/patioonly'] = 4 #this reviewer is a asshat
 
     reverse_labels = {}
     labels = {}
@@ -60,18 +62,29 @@ def convert_to_svm(path_to_filename):
     path = path_to_filename.split('/')
     filename = path[-1][:-4]
 
-    #change this, right now only doing 2 and 3 years
-    if filename in dates:
-        if filename in open_rest and open_rest[filename] < 3.0: #don't add an open restuarant unless it's been open from longer than 3 years
-            return ''
-        elif int(dates[filename]) < 3:
-            lineRet += str(2) + ' '
+    #right now only doing 2 and 3 years. can change this later for more classes if desired
+    #different protocols for making training data vs testing data
+    if make_training_data:
+        if filename in dates:
+            if filename in open_rest and open_rest[filename] < 3.0: #don't add an open restuarant unless it's been open from longer than 3 years
+                return ''
+            elif int(dates[filename]) < 3:
+                lineRet += str(2) + ' '
+            else:
+                lineRet += str(3) + ' '
         else:
-            lineRet += str(3) + ' '
-    else:
-        print filename + " has no duration calulated yet"
-        lineRet += "-1 "
-    
+            print filename + " has no duration calulated yet"
+            lineRet += "-1 "
+    else: #making testing data: 
+        if filename in dates:
+            if filename in open_rest and open_rest[filename] < 3.0: #only add an open restuarant that's been open for less than 3 years
+                lineRet += str(2) + ' ' #doesn't matter what str(2) is, since we will be using this file for prediction. just need something there for formatting
+            else:
+                return ''
+        else:
+            print filename + " has no duration calulated yet"
+            lineRet += "-1 "
+        
     #make a feature file
     with open(path_to_filename, 'r') as f:
         fileDict = {}
@@ -117,23 +130,51 @@ def convert_to_svm(path_to_filename):
                 lineRet += str(labels[feature]) + ":0 "
     return lineRet
 
-#convert_to_svm('data/training/javans-goleta.txt')
 
-#convert all files, create the training set 
-def make_svm():
+'''
+convert all files, create the test set 
+for the test set, we only write test websites to an svm file
+'''
+def make_test_svm():
+    testing_sites = listdir('data/test/')
+    svm_lines = []
+    svm_names = [] #write the names of the test restaurants
+
+    for site in testing_sites:
+        temp = convert_to_svm('data/test/' + site, False)
+        if temp is '': #don't write names that have been open for less than x years
+            continue
+        else:
+            svm_lines.append(temp)
+            svm_names.append(site)
+
+    with open('test_svm_data.txt', 'wb') as f:
+        for line in svm_lines:
+            f.write(line + '\n')
+
+    #we write this file so we can refer to the open restaurants in our classification analysis
+    with open('test_rest_names.txt', 'wb') as f:
+        for name in svm_names:
+            f.write(name + '\n')
+
+'''
+create the training set
+for the training set, we write both some test and training sites - all training sites are closed, and we need to have some examples of open sites as well
+'''
+def make_training_svm():
     training_sites = listdir('data/training/')
     testing_sites = listdir('data/test/')
     svm_lines = []
 
     for site in training_sites:
-        temp = convert_to_svm('data/training/' + site)
+        temp = convert_to_svm('data/training/' + site, True)
         if temp is '':
             continue
         else:
             svm_lines.append(temp)
 
     for site in testing_sites:
-        temp = convert_to_svm('data/test/' + site)
+        temp = convert_to_svm('data/test/' + site, True)
         if temp is '':
             continue
         else:
@@ -143,7 +184,8 @@ def make_svm():
         for line in svm_lines:
             f.write(line + '\n')
 
-make_svm()
+make_training_svm()
+make_test_svm()
 
 
 

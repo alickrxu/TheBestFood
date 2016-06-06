@@ -26,4 +26,4 @@ def makeDict(fileName):
         pickle.dump(dictionary,f)
 
 
-makeDict('features.txt')
+makeDict('raw_features.txt')
